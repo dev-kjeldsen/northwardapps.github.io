@@ -21,6 +21,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+          gemfile: Gemfile.test
+      - name: Lint front matter and validate HTML
+        run: BUNDLE_GEMFILE=Gemfile.test bundle exec rake test
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -37,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
-    needs: build
+    needs: [test, build]
     runs-on: ubuntu-latest
     environment:
       name: github-pages

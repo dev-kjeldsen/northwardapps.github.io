@@ -3,7 +3,7 @@ layout: post
 title: "7 critical N-400 filing mistakes that delay your case"
 date: 2026-05-27
 author: Granted Team
-description: "Most N-400 delays don't come from background check problems — they come from filing errors made before USCIS ever opens your envelope. These are the seven most common."
+description: "Most N-400 delays come from filing errors, not background checks. These are the seven most common mistakes made before USCIS ever opens your envelope."
 ---
 
 Most N-400 delays don't come from background check problems or USCIS bureaucracy. They come from filing errors made before USCIS ever opens the envelope.

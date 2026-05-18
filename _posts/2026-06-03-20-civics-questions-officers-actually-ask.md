@@ -3,7 +3,7 @@ layout: post
 title: "The 20 civics questions officers actually ask"
 date: 2026-06-03
 author: Granted Team
-description: "USCIS officers only ask 10–20 questions from a much larger bank. These are the questions that come up most often in real interviews — and why officers gravitate to them."
+description: "USCIS officers only ask 10–20 questions from a larger bank. These are the civics questions that come up most often in real N-400 interviews."
 ---
 
 The USCIS civics test bank has 100 questions in the 2008 version and 128 in the 2025 version. The officer at your interview only asks 10 (2008) or up to 20 (2025).
