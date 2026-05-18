@@ -6,24 +6,4 @@ permalink: /blog/
 ---
 <h1>Blog</h1>
 
-{%- if site.posts.size > 0 -%}
-<ul class="post-list" style="list-style: none; padding: 0;">
-  {%- for post in site.posts -%}
-  <li style="margin: 0 0 24px; padding-bottom: 20px; border-bottom: 1px solid #e5e7ef;">
-    <a href="{{ post.url | relative_url }}" style="font-size: 1.15rem; font-weight: 600;">{{ post.title }}</a>
-    {%- assign teaser = post.meta_description | default: post.description -%}
-    {%- if teaser -%}
-      <p style="margin: 6px 0 0; color: #5a5a6e;">{{ teaser }}</p>
-    {%- endif -%}
-    {%- assign updated = post.last_updated | default: post.date -%}
-    {%- if updated -%}
-      <p style="margin: 6px 0 0; color: #5a5a6e; font-size: 0.85rem;">
-        <time datetime="{{ updated | date_to_xmlschema }}">{{ updated | date: "%B %-d, %Y" }}</time>
-      </p>
-    {%- endif -%}
-  </li>
-  {%- endfor -%}
-</ul>
-{%- else -%}
-<p style="color: #5a5a6e;">No posts yet — check back soon.</p>
-{%- endif -%}
+{% include post-list.html %}
