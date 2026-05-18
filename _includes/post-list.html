@@ -1,0 +1,21 @@
+{%- if site.posts.size > 0 -%}
+<ul class="post-list">
+  {%- for post in site.posts -%}
+  <li class="post-list-item">
+    <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {%- assign teaser = post.meta_description | default: post.description -%}
+    {%- if teaser -%}
+      <p class="post-list-teaser">{{ teaser }}</p>
+    {%- endif -%}
+    {%- assign updated = post.last_updated | default: post.date -%}
+    {%- if updated -%}
+      <p class="post-list-date">
+        <time datetime="{{ updated | date_to_xmlschema }}">{{ updated | date: "%B %-d, %Y" }}</time>
+      </p>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>
+{%- else -%}
+<p class="post-list-empty">No posts yet — check back soon.</p>
+{%- endif -%}
