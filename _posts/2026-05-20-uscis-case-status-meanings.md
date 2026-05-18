@@ -3,7 +3,7 @@ layout: post
 title: "USCIS case status meanings: what each update actually means"
 date: 2026-05-20
 author: Granted Team
-description: "Every USCIS case status decoded — what each update means, how long the next step typically takes, and when a status genuinely signals a problem versus normal silence."
+description: "Every USCIS case status decoded: what each update means, how long the next step takes, and when a status signals a real problem versus normal silence."
 ---
 
 USCIS case status updates are written in bureaucratic shorthand that is technically accurate and emotionally infuriating. "Case Was Updated" tells you nothing about what was updated. "Request for Initial Evidence Was Sent" sounds catastrophic but is often routine.
